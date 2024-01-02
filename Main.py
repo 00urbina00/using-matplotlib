@@ -33,51 +33,51 @@ plt.yticks(np.arange(0, 1001, 50))
 plt.grid()
 plt.minorticks_on()
 
-# plt.show()    # Uncomment to show the graph
+plt.show()    # Uncomment to show the graph
 
 # Vertical bar graph
 # ----------------------------------------------------------------------------------------------------------------------
 plt.clf()
-eje_x = np.arange(0, 10)
+X_axis = np.arange(0, 10)
 
-plt.bar(eje_x, level5, width=1/5)
-plt.bar(eje_x + 0.2, level4, width=1/5)
-plt.bar(eje_x + 0.4, level3, width=1/5)
-plt.bar(eje_x + 0.6, level2, width=1/5)
-plt.bar(eje_x + 0.8, level1, width=1/5)
+plt.bar(X_axis, level5, width=1/5)
+plt.bar(X_axis + 0.2, level4, width=1/5)
+plt.bar(X_axis + 0.4, level3, width=1/5)
+plt.bar(X_axis + 0.6, level2, width=1/5)
+plt.bar(X_axis + 0.8, level1, width=1/5)
 
 # plt.show()    # Uncomment to show the graph
 
 # Horizontal bar graph
 # ----------------------------------------------------------------------------------------------------------------------
 plt.clf()
-plt.barh(eje_x+0.8, level5, height=1/5)
-plt.barh(eje_x+0.6, level4, height=1/5)
-plt.barh(eje_x+0.4, level3, height=1/5)
-plt.barh(eje_x+0.2, level2, height=1/5)
-plt.barh(eje_x, level1, height=1/5)
+plt.barh(X_axis+0.8, level5, height=1/5)
+plt.barh(X_axis+0.6, level4, height=1/5)
+plt.barh(X_axis+0.4, level3, height=1/5)
+plt.barh(X_axis+0.2, level2, height=1/5)
+plt.barh(X_axis, level1, height=1/5)
 
 # plt.show()    # Uncomment to show the graph
 
 # Stacked bar graph
 # ----------------------------------------------------------------------------------------------------------------------
 plt.clf()
-plt.bar(eje_x, level5)
-plt.bar(eje_x, level4, bottom=level5)
-plt.bar(eje_x, level3, bottom=level4+level5)
-plt.bar(eje_x, level2, bottom=level3+level4+level5)
-plt.bar(eje_x, level1, bottom=level2+level3+level4+level5)
+plt.bar(X_axis, level5)
+plt.bar(X_axis, level4, bottom=level5)
+plt.bar(X_axis, level3, bottom=level4+level5)
+plt.bar(X_axis, level2, bottom=level3+level4+level5)
+plt.bar(X_axis, level1, bottom=level2+level3+level4+level5)
 
 # plt.show()    # Uncomment to show the graph
 
 # Scatter plot
 # ----------------------------------------------------------------------------------------------------------------------
 plt.clf()
-plt.scatter(eje_x, level1, marker="*")
-plt.scatter(eje_x, level2, marker=".")
-plt.scatter(eje_x, level3, marker="^")
-plt.scatter(eje_x, level4, marker="v")
-plt.scatter(eje_x, level5, marker=">")
+plt.scatter(X_axis, level1, marker="*")
+plt.scatter(X_axis, level2, marker=".")
+plt.scatter(X_axis, level3, marker="^")
+plt.scatter(X_axis, level4, marker="v")
+plt.scatter(X_axis, level5, marker=">")
 
 # plt.show()    # Uncomment to show the graph
 
@@ -93,12 +93,12 @@ plt.pie(level1,
 # ----------------------------------------------------------------------------------------------------------------------
 plt.clf()
 
-plt.bar(eje_x, level1, width=1/5)
-plt.bar(eje_x + 0.2, level2, width=1/5)
+plt.bar(X_axis, level1, width=1/5)
+plt.bar(X_axis + 0.2, level2, width=1/5)
 
 plt.plot(years, level3)
 
-plt.scatter(eje_x, level4)
-plt.scatter(eje_x, level5)
+plt.scatter(X_axis, level4)
+plt.scatter(X_axis, level5)
 
 # plt.show()    # Uncomment to show the graph
